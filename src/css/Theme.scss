@@ -1,0 +1,182 @@
+.App {
+    background: rosybrown;
+    color: #121212;
+}
+
+.badge {
+    color: #1F2937;
+    background: #F3F4F6;
+
+    &.red {
+        color: #991B1B;
+        background: #FEE2E2;
+    }
+
+    &.yellow {
+        color: #92400E;
+        background: #FEF3C7;
+    }
+
+    &.green {
+        color: #065F46;
+        background: #D1FAE5;
+    }
+
+    &.blue {
+        color: #1E40AF;
+        background: #DBEAFE;
+    }
+
+    &.indigo {
+        color: #3730A3;
+        background: #E0E7FF;
+    }
+
+    &.purple {
+        color: #5B21B6;
+        background: #EDE9FE;
+    }
+
+    &.pink {
+        color: #9D174D;
+        background: #FCE7F3;
+    }
+}
+
+.banner {
+    &.success {
+        background: #ECFDF5;
+    }
+
+    &.warning {
+        background: #FFFBEB;
+    }
+
+    &.neutral {
+        background: #EFF6FF;
+    }
+
+    &.error {
+        background: #FEF2F2;   
+    }
+}
+
+.banner-title {
+    .success & {
+        color: #065F46;
+
+        svg {
+            color: #34D399;
+        }
+    }
+
+    .warning & {
+        color: #92400E;
+    }
+
+    .neutral & {
+        color: #1E40AF;
+    }
+
+    .error & {
+        color: #92400E;
+    }
+
+    svg {
+        .success & {
+            color: #34D399;
+        }
+        
+        .warning & {
+            color: #FBBF24;
+        }
+
+        .neutral & {
+            color: #60A5FA;
+        }
+
+        .error & {
+            color: #F87171;
+        }
+    }
+}
+
+.banner-content {
+    .success & {
+        color: #047857;
+    }
+
+    .warning & {
+        color: #B45309;
+    }
+
+    .neutral & {
+        color: #1C51B9;
+    }
+
+    .error & {
+        color: #B45309;
+    }
+}
+
+.card {
+    background: #F9FAFB;
+    &:hover {
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.card-title {
+    color: #111827;
+}
+
+.card-content {
+    color: #6B7280;
+}
+
+.testimonial {
+    background: #F9FAFB;
+    color: #111827;
+
+    &.hasPic {
+        background: #2545B8;
+        color: #fff;
+    }
+}
+
+.testimonial-logo {
+    span {
+        &:first-child {
+            color: #1F2937;
+        }
+        &:last-child {
+            color: #2E59F3;
+        }
+    }
+}
+
+.testimonial-text {
+    svg {
+     color: #2E59F3;   
+    }
+
+    .hasPic & {
+        svg {
+            color: rgba(255, 255, 255, .25);
+        }
+    }
+}
+
+.testimonial-info {
+    span {
+        &::after {
+            background: #2E59F3;
+        }
+    }
+}
+
+.testimonial-title {
+    &:not(.hasPic &) {
+        color: #6B7280;
+    }
+}
